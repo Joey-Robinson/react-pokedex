@@ -9,11 +9,13 @@ export const Call = () => {
       .then(x => x.json())
       .then(response => setPokemon(response))
   }, [])
+
   const height = pokemon.height
   const weight = pokemon.weight
+
   return (
     <div>
-      <Card height={height} weight={weight} />
+      <Card name={pokemon.name} height={height} weight={weight} />
       {/* {Object.keys(pokemon).map(({ abilities }) => (
         <li style={{ fontSize: "40px" }}>
           {abilities.map(a => a.ability.name)}
