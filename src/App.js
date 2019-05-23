@@ -1,12 +1,9 @@
 import React from "react"
 import Call from "./Call"
+import "./style.css"
 
 const App = () => {
-  return (
-    <div className="App">
-      <Call />
-    </div>
-  )
+  return <Call />
 }
 
 export default App

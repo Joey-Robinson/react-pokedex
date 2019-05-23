@@ -12,16 +12,18 @@ export const Call = () => {
 
   const height = pokemon.height
   const weight = pokemon.weight
+  const front = { ...pokemon.sprites }
+  console.log(front)
+  //
 
+  // const m = pokemon.sprites.front_default
   return (
-    <div>
-      <Card name={pokemon.name} height={height} weight={weight} />
-      {/* {Object.keys(pokemon).map(({ abilities }) => (
-        <li style={{ fontSize: "40px" }}>
-          {abilities.map(a => a.ability.name)}
-        </li>
-      ))} */}
-    </div>
+    <Card
+      image={front.front_default}
+      name={pokemon.name}
+      height={height}
+      weight={weight}
+    />
   )
 }
 
