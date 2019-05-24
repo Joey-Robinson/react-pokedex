@@ -1,6 +1,6 @@
 import React from "react"
-import Call from "./Call"
-import "./style.css"
+import "../sass/main.scss"
+import Call from "./Call/Call"
 
 const App = () => {
   return <Call />
