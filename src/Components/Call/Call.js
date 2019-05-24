@@ -13,16 +13,45 @@ export const Call = () => {
   const height = pokemon.height
   const weight = pokemon.weight
   const front = { ...pokemon.sprites }
-  console.log(front)
-  //
+  const stats = { ...pokemon.stats }
+  const speed = { ...stats[0] }
+  const specialDefense = { ...stats[1] }
+  const defense = { ...stats[3] }
+  const attack = { ...stats[4] }
+  const healthBase = { ...stats[5] }
 
+  // if (pokemon) {
+  //   return (
+  //     <Card
+  //       specialDefense={specialDefense.base_stat}
+  //       defense={defense.base_stat}
+  //       attack={attack.base_stat}
+  //       speed={speed.base_stat}
+  //       health={healthBase.base_stat}
+  //       image={front.front_default}
+  //       name={pokemon.name}
+  //       height={height}
+  //       weight={weight}
+  //     />
+  //   )
+  // }
+  console.log(stats)
   return (
-    <Card
-      image={front.front_default}
-      name={pokemon.name}
-      height={height}
-      weight={weight}
-    />
+    <div>
+      {pokemon && (
+        <Card
+          specialDefense={specialDefense.base_stat}
+          defense={defense.base_stat}
+          attack={attack.base_stat}
+          speed={speed.base_stat}
+          health={healthBase.base_stat}
+          image={front.front_default}
+          name={pokemon.name}
+          height={height}
+          weight={weight}
+        />
+      )}
+    </div>
   )
 }
 
