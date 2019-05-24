@@ -1,18 +1,29 @@
 .list {
   display: grid;
-  width: 15rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 243.2px;
+  height: 356.267px;
 }
 
-.list img {
-  margin: 0;
-  padding: 0;
+.list--image {
+  grid-column: 1 / 4;
+  grid-row: 1;
   justify-self: center;
-  height: 15em;
-  width: 15em;
+  align-self: start;
 }
 
-.list h1 {
+.list--image img {
+  height: 208px;
+  width: 211.5px;
+}
+
+.list--name {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  align-self: end;
+  font-size: 30px;
+  justify-self: center;
   padding: 0;
   margin: 0;
-  text-align: center;
 }

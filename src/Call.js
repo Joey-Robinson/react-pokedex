@@ -16,7 +16,6 @@ export const Call = () => {
   console.log(front)
   //
 
-  // const m = pokemon.sprites.front_default
   return (
     <Card
       image={front.front_default}
