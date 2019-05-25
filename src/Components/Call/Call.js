@@ -37,10 +37,7 @@ export const Call = () => {
   //     />
   //   )
   // }
-  const onHover = () => {
-    console.log("Hi")
-  }
-  console.log(stats)
+
   return (
     <>
       {pokemon && (
@@ -56,7 +53,6 @@ export const Call = () => {
             name={pokemon.name}
             height={height}
             weight={weight}
-            onHover={onHover}
           />
         </Tilt>
       )}

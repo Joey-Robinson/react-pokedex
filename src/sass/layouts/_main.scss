@@ -1,8 +1,17 @@
 .app {
   display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 100vh;
-  height: 100vh;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 200vh;
+  height: 200vh;
   width: 100vw;
-  overflow: hidden;
+}
+
+.magic {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: start;
+  background: darkorchid;
+  height: 100%;
+  color: white;
+  z-index: 50;
 }
