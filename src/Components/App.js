@@ -3,7 +3,11 @@ import "../sass/main.scss"
 import Call from "./Call/Call"
 
 const App = () => {
-  return <Call />
+  return (
+    <div className="app">
+      <Call />
+    </div>
+  )
 }
 
 export default App

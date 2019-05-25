@@ -9,7 +9,8 @@ export const Card = ({
   speed,
   attack,
   defense,
-  specialDefense
+  specialDefense,
+  specialAttack
 }) => (
   <div className="list">
     <div className="list--image">
@@ -43,6 +44,10 @@ export const Card = ({
     <p className="list--sdefense">
       {`${specialDefense}`}
       <br /> <span>SP-Def</span>
+    </p>
+    <p className="list--sattack">
+      {`${specialAttack}`}
+      <br /> <span>SP-ATK</span>
     </p>
   </div>
 )

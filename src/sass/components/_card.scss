@@ -1,9 +1,16 @@
 .list {
+  grid-column: 1;
+  justify-self: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   width: 24.3rem;
   height: 35.6rem;
+  box-shadow: 0 0 0 1px #d0d0d0;
+  background: linear-gradient(135deg, #fbfbfb, #f1f1f1);
+  span {
+    border-top: 2px solid red;
+  }
   img {
     height: 20.8rem;
     width: 21.2rem;
@@ -53,19 +60,25 @@
   &--attack {
     grid-column: 1;
     grid-row: 2;
-    align-self: end;
+    align-self: center;
+    text-align: center;
+  }
+  &--sattack {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
     text-align: center;
   }
   &--defense {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
-    align-self: end;
+    align-self: center;
     text-align: center;
   }
   &--sdefense {
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 2;
-    align-self: end;
+    align-self: center;
     text-align: center;
   }
 }

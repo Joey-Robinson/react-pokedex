@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Card } from "../Card/Card"
+import Tilt from "../Tilt/Tilt"
 
 export const Call = () => {
   const [pokemon, setPokemon] = useState({})
@@ -16,6 +17,7 @@ export const Call = () => {
   const stats = { ...pokemon.stats }
   const speed = { ...stats[0] }
   const specialDefense = { ...stats[1] }
+  const specialAttack = { ...stats[2] }
   const defense = { ...stats[3] }
   const attack = { ...stats[4] }
   const healthBase = { ...stats[5] }
@@ -35,23 +37,30 @@ export const Call = () => {
   //     />
   //   )
   // }
+  const onHover = () => {
+    console.log("Hi")
+  }
   console.log(stats)
   return (
-    <div>
+    <>
       {pokemon && (
-        <Card
-          specialDefense={specialDefense.base_stat}
-          defense={defense.base_stat}
-          attack={attack.base_stat}
-          speed={speed.base_stat}
-          health={healthBase.base_stat}
-          image={front.front_default}
-          name={pokemon.name}
-          height={height}
-          weight={weight}
-        />
+        <Tilt>
+          <Card
+            specialAttack={specialAttack.base_stat}
+            specialDefense={specialDefense.base_stat}
+            defense={defense.base_stat}
+            attack={attack.base_stat}
+            speed={speed.base_stat}
+            health={healthBase.base_stat}
+            image={front.front_default}
+            name={pokemon.name}
+            height={height}
+            weight={weight}
+            onHover={onHover}
+          />
+        </Tilt>
       )}
-    </div>
+    </>
   )
 }
 

@@ -18,6 +18,22 @@ body {
   line-height: 1.6;
 }
 
-.loading {
-  font-size: 50rem;
+div.Tilt {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  div.Tilt_wrapper {
+    display: flex;
+    flex: 1;
+    will-change: transform;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    perspective-origin: center center;
+  }
+
+  &:hover {
+    z-index: 1;
+  }
 }
