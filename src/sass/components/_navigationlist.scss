@@ -1,0 +1,22 @@
+.navigation {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  background: darkorchid;
+  height: 100vh;
+  color: white;
+  display: grid;
+  width: 100%;
+  ul {
+    list-style: none;
+    text-align: center;
+    width: 20vw;
+    margin: 0;
+    padding: 0.5em 0;
+    overflow-y: scroll;
+    will-change: scroll-position;
+    -webkit-overflow-scrolling: touch;
+  }
+  li {
+    padding: 5px 0;
+  }
+}

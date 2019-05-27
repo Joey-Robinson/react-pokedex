@@ -17,5 +17,9 @@ export const Navigation = () => {
     names.push(<List key={key} name={value.name} />)
   }
 
-  return <ul className="magic">{names}</ul>
+  return (
+    <div className="navigation">
+      <ul>{names}</ul>
+    </div>
+  )
 }
