@@ -11,12 +11,18 @@
     text-align: center;
     width: 20vw;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0;
     overflow-y: scroll;
     will-change: scroll-position;
     -webkit-overflow-scrolling: touch;
   }
+  button {
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   li {
-    padding: 5px 0;
+    // padding: 5px 0;
   }
 }

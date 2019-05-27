@@ -14,7 +14,9 @@ export const Navigation = () => {
   const pokeNames = { ...pokeResults }
   const names = []
   for (let [key, value] of Object.entries(pokeNames)) {
-    names.push(<List key={key} name={value.name} />)
+    names.push(
+      <List key={key} onClick={() => console.log("hi")} name={value.name} />
+    )
   }
 
   return (
