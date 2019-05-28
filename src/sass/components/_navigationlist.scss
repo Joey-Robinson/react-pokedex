@@ -27,6 +27,9 @@
     padding: 1rem 0;
     margin: 0;
     transition: all 0.3s ease-in-out;
+    &::first-letter {
+      text-transform: uppercase;
+    }
     &:hover {
       color: white;
       background: darken(#b3b9c5, 25%);

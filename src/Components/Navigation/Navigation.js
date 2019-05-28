@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { List } from "../List/List"
+import Search from "../Search/Search"
 
 export const Navigation = () => {
   const [pokemonAll, setPokemonAll] = useState({})
@@ -21,6 +22,7 @@ export const Navigation = () => {
 
   return (
     <div className="navigation">
+      <Search onChange={e => console.log(e.target.value)} />
       <ul>{names}</ul>
     </div>
   )

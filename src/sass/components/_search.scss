@@ -1,0 +1,21 @@
+.search {
+  padding: 1em;
+  display: flex;
+  font-size: 1em;
+  background-color: #d5d5d5;
+  box-shadow: 0 0 3px 1px #00000061;
+  z-index: 1;
+  height: 4rem;
+
+  &--field {
+    flex: 1;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.2em 1.3em 0.2em 1.3em;
+    outline: none;
+    box-shadow: 0 0 2px 0 #00000075;
+    background: #fffc;
+    transition: all 0.1s ease-in-out;
+    font-size: 1.1em;
+  }
+}
