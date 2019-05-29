@@ -4,6 +4,7 @@ import Search from "../Search/Search"
 
 export const Navigation = () => {
   const [pokemonAll, setPokemonAll] = useState({})
+  const [search, setSearch] = useState("")
 
   useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon/?limit=802")
@@ -22,7 +23,10 @@ export const Navigation = () => {
 
   return (
     <div className="navigation">
-      <Search onChange={e => console.log(e.target.value)} />
+      <Search
+        onChange={event => setSearch(event.target.value)}
+        value={search}
+      />
       <ul>{names}</ul>
     </div>
   )
